@@ -9,10 +9,13 @@
     transform: scale(1.4);
   }
 }
+
 .about {
   background-color: #0a2850;
   display: flex;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .about__title {
@@ -25,12 +28,12 @@
   color: white;
   margin-left: 80px;
   margin-top: 100px;
+  z-index: 2;
 }
 
 .about__content {
   color: white;
   max-width: 660px;
-  gap: 20px;
   padding: 119px;
   margin-bottom: 173px;
   text-align: left;
@@ -39,20 +42,16 @@
 .about__circle {
   border-radius: 50%;
   position: absolute;
-  top: 152px;
-  right: 129px;
+  top: -152px;
+  left: -129px;
   width: 426px;
   height: 426px;
+  background-color: #2f80ed;
 }
 
 .about__circle_animation_blurred {
-  width: 426px;
-  height: 426px;
-  background: #1878dc;
-  border-radius: 50%;
-  position: absolute;
-  top: -152px;
-  left: -129px;
-  z-index: -2;
   animation: pulse 1.3s ease-in-out infinite;
+}
+
+.about__paragraph {
 }
